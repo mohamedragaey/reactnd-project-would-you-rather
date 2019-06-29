@@ -1,0 +1,17 @@
+.questions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question {
+    padding-bottom: 24px;
+}
+
+.category-toggler {
+    display: flex;
+    padding: 40px 15px;
+    justify-content: center;
+}

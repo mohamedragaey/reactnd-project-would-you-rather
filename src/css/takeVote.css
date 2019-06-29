@@ -1,0 +1,38 @@
+.vote-container {
+    margin: 5% auto;
+    width: 350px;
+}
+
+.avatar-holder {
+    padding-bottom: 0;
+}
+
+.vote-btn {
+    background-color: #6d59b9;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.author {
+    padding-top: 20px;
+}
+
+.yourAnswer {
+    color: #6d59b9;
+}
+
+.returnBtn {
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.purple {
+    color: #6d59b9;
+}
