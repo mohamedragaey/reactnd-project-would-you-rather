@@ -11,10 +11,8 @@ class User extends Component {
   }
 
   handleLogin = id => {
-    const { dispatch } = this.props
-
     fakeAuth.authenticate(() => {
-      dispatch(setAuthedUser(id))
+      this.props.setAuthedUser(id)
       this.setState({ redirectToReferrer: true })
     })
   }
@@ -53,6 +51,14 @@ class User extends Component {
   }
 }
 
+function mapDispatchToProps(dispatch) {
+  return ({
+    setAuthedUser: (id) => {
+      dispatch(setAuthedUser(id))
+    }
+  })
+}
+
 function mapStateToProps({ authedUser, users }, { id }) {
   const user = users[id]
   return {
@@ -61,4 +67,4 @@ function mapStateToProps({ authedUser, users }, { id }) {
   }
 }
 
-export default connect(mapStateToProps)(User)
+export default connect(mapStateToProps,mapDispatchToProps)(User)

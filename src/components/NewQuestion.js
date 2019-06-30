@@ -36,7 +36,7 @@ class NewQuestion extends Component {
 
   render() {
     const {redirectHome, optionOneText, optionTwoText} = this.state
-    const dontPost = optionOneText === '' ? true : optionTwoText === ''
+    const dontPost = optionOneText === '' || optionTwoText === ''
 
     if (redirectHome) {
       return <Redirect to={`/home`}/>
